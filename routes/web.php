@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::resource('Incident', 'IncidentController');
 
+Route::get('Incident','IncidentController@index')->name('Incident');
+
 Route::delete('apagar/{id}', 'IncidentController@destroy');
 
 Route::post('update/{id}', 'IncidentController@update')->name('update');

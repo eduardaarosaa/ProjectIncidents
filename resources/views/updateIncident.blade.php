@@ -82,6 +82,10 @@
                         </form>
                     </div>
                 </div>
+                 <br>
+            <a href="{{route('Incident')}}">
+             <input type="button" class="btn btn-success" value="Voltar">
+            </a> 
             </div>
 
         </div>
