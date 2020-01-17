@@ -42,6 +42,12 @@
                                 <a href="">
                                     <button type="" class="btn btn-success">Editar</button>
                                 </a>
+                                <br><br>
+                                <form action="apagar/{{$row->id}}" method="post">
+                                        @csrf
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn btn-success">Apagar </button>
+                                    </form>
                             </td>
                             
                         </tr>

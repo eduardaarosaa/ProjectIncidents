@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::resource('Incident', 'IncidentController');
+
+Route::delete('apagar/{id}', 'IncidentController@destroy');

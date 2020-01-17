@@ -100,6 +100,13 @@ class IncidentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete = Incident::find($id)->delete();
+        if (!empty($delete)) {
+            toastr()->success('Apagado com sucesso!!!');
+            return redirect()->back();
+        } else {
+            toastr()->error('Erro ao apagar!!!');
+            return redirect()->back();
+        }
     }
 }
