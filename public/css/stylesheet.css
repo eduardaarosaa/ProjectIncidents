@@ -19,6 +19,10 @@ body{
 	background-color: red;
 	border: 1px solid red;
 }
+.btn:hover{
+	background-color: #8B8989;
+	border:1px solid #8B8989;
+}
 
 .page-item.active .page-link{
     background-color:red;
