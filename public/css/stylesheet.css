@@ -1,0 +1,26 @@
+body{
+	background-image: url('../img/fundo.jpg');
+	background-size:100%;
+}
+.nav-principal{
+
+	background-color: red;
+}
+
+.link-principal{
+
+	color: #fff!important;
+	font-family: 'Alata', sans-serif;
+	font-size: 23pt!important;
+
+}
+
+.btn{
+	background-color: red;
+	border: 1px solid red;
+}
+
+.page-item.active .page-link{
+    background-color:red;
+    border-color:red;
+
