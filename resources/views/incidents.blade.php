@@ -38,7 +38,15 @@
                                 <td>{{$row->description}}</td>
                                 <td>{{$row->criticality}}</td>
                                 <td>{{$row->type}}</td>
-                                <td>{{$row->status}}</td>
+                                <td> @if ($row->status == 1 )
+                                        Aberto
+
+                                    @else 
+
+                                        Fechado 
+
+                                    @endif
+                                </td>
                                 <td>
                                     <a href="{{route('Incident.edit', $row->id)}}">
                                         <button class="btn btn-success">Editar</button>
