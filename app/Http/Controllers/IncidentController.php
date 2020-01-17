@@ -77,7 +77,8 @@ class IncidentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $consulta =  Incident::find($id);
+        return view('updateIncident',compact('consulta'));
     }
 
     /**
@@ -89,7 +90,26 @@ class IncidentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $incidents = Incident::findOrFail($id);
+
+        $incidents->title = $request->title;
+        $incidents->description = $request->description;
+        $incidents->criticality = $request->criticality;
+        $incidents->type = $request->criticality;
+        $incidents->status = $request->status;
+
+        $incidents->save();
+        if (!empty($incidents)) {
+            toastr()->success('Incidente alterado com sucesso!');
+            return redirect()->back();
+        } else {
+            toastr()->error('Erro ao alterar um incidente!');
+            return redirect()->back();
+        }
+
+
+
     }
 
     /**

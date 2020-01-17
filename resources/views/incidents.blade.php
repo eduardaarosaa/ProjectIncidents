@@ -40,8 +40,8 @@
                                 <td>{{$row->type}}</td>
                                 <td>{{$row->status}}</td>
                                 <td>
-                                    <a href="">
-                                        <button type="" class="btn btn-success">Editar</button>
+                                    <a href="{{route('Incident.edit', $row->id)}}">
+                                        <button class="btn btn-success">Editar</button>
                                     </a>
                                     <br><br>
                                     <form action="apagar/{{$row->id}}" method="post">
