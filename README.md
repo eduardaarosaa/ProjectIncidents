@@ -1,7 +1,7 @@
 Porjeto Incidentes 
 
 
-Este projeto foi desenvolvido com o Framework Laravel versão 6.0 em PHP, faz uso da bibliote toastr para notificações e Bootstrap.
+Este projeto foi desenvolvido com o Framework Laravel versão 6.0 em PHP, faz uso da biblioteca toastr para notificações e Bootstrap.
 
 Para acessar: 
 
